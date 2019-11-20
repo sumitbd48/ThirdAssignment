@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="15dp">
+        android:padding="5dp">
 
         <TextView
             android:id="@+id/tvStudent"
@@ -16,7 +16,7 @@
             android:text="Student Details"
             android:textSize="25dp"
             android:textStyle="bold"
-            android:gravity="center_horizontal"/>
+            android:gravity="center"/>
 
         <EditText
             android:id="@+id/etFullName"

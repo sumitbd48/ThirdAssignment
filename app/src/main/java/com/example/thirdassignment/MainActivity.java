@@ -2,6 +2,8 @@ package com.example.thirdassignment;
 
 import android.os.Bundle;
 
+import com.example.thirdassignment.model.Student;
+import com.example.thirdassignment.ui.add_student.DashboardFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        DashboardFragment.studentList.add(new Student("Sumit Buddhacharya", "22", "Male","Kalimati"));
+        DashboardFragment.studentList.add(new Student("Shahrukh Khan", "52", "Male","Mumbai"));
+        DashboardFragment.studentList.add(new Student("Gauri Khan", "45", "Female","Mannat"));
+
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
