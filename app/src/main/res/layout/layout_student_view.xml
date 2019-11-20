@@ -1,7 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#d5bceb"
+    android:layout_margin="10dp"
+    android:padding="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/male"/>
+
+    <TextView
+        android:id="@+id/txtFullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/txtFullname"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/txtAge"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewTrash"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/trashbin"
+        android:layout_toRightOf="@+id/txtFullname"
+        android:layout_marginLeft="130dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_toRightOf="@+id/txtAddress"
+        android:layout_below="@+id/txtAge"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="145dp"/>
+
+</RelativeLayout>
