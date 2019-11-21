@@ -76,16 +76,19 @@ public class DashboardFragment extends Fragment {
     public boolean validate(){
         if (TextUtils.isEmpty(fullname)){
             etFullname.setError("Enter Full Name!");
+            etFullname.requestFocus();
             return false;
         }
 
         if (TextUtils.isEmpty(age)){
             etAge.setError("Enter Age!");
+            etAge.requestFocus();
             return false;
         }
 
         if (TextUtils.isEmpty(address)){
             etAddress.setError("Enter Address!");
+            etAddress.requestFocus();
             return false;
         }
         if (TextUtils.isEmpty(gender)){
